@@ -16,7 +16,6 @@ try:
     filter  = "(&(objectClass=user)(sAMAccountName=testaccount))"
     attributes = None
     result = l.search_s(basedn, scope, filter, attributes)
-    #ls = result[0][1]['physicalDeliveryOfficeName']
     dn = result[0][0]
     old = {'physicalDeliveryOfficeName': ''}
     new = {'physicalDeliveryOfficeName': 'just a test'}
