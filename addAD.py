@@ -13,7 +13,7 @@ try:
  
     dn = "CN=testaccount,OU=office,DC=test,DC=com"
     attrs = {}
-    attrs['objectclass'] = 
+    attrs['objectclass'] = 'user' 
     attrs['cn'] = 'testaccount'
     attrs['sAMAccountName'] = 'testaccount'
     attrs['description'] = 'Just for test'
